@@ -1,0 +1,17 @@
+---
+layout: page
+title: Posts
+permalink: posts.html
+---
+
+<ul>
+  {% for post in site.posts %}
+    <li id="{{ post.title }}">
+      <span class="post-meta">{{ post.date | date: "%Y-%m-%d" }}</span>
+      /
+    <h6 style="display:inline">
+      <a href={{ post.url }}>{{ post.title }}</a>
+    </h6>
+   </li>
+  {% endfor %}
+</ul>

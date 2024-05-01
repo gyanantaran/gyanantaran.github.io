@@ -1,0 +1,31 @@
+# Dependencies
+markdown: kramdown
+highlighter:      pygments
+
+# Permalinks
+permalink:        pretty
+# relative_permalinks: true
+
+# Setup
+title:            gyan
+tagline:          ""
+description:      "I'm Vishal. I write about compilers, performance, and silly computer things. I also draw Pokémon."
+url:              https://gyanantaran.github.io/
+baseurl:          /
+
+author:
+  name:           'vishal'
+  url:            https://twitter.com/gyanantaran
+
+paginate:         5
+
+# Custom vars
+version:          2.1.0
+
+github:
+  repo:           https://github.com/gyanantaran.github.io
+
+plugins:
+  - jekyll-paginate
+  - jekyll-gist
+  - redcarpet

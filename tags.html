@@ -1,0 +1,20 @@
+---
+layout: page
+title: Tags
+permalink: /tags.html
+---
+
+{% for tag in site.tags %}
+    <h2 id="{{ tag[0] }}">#{{ tag[0] }}</h2> <!-- Tag name -->
+    <ul>
+      {% for post in tag[1] %} <!-- List of posts under the tag -->
+        <li>
+          <span class="post-meta">{{ post.date | date: "%Y-%m-%d" }}</span>
+          /
+          <h6 style="display:inline">
+            <a href="{{ post.url }}">{{ post.title }}</a>
+          </h6>
+        </li>
+      {% endfor %}
+    </ul>
+{% endfor %}
